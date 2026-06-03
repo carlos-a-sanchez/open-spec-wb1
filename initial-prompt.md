@@ -7,6 +7,9 @@ Build a fully functional, single-tenant Sprint Task Manager web application feat
 - **Frontend:** React, Vite, TypeScript, Tailwind CSS
 - **Backend:** Node.js, Express, TypeScript
 - **Database:** In-memory storage (variables/collections in memory, reset on server restart)
+Tests: Vitest (and Supertest for API tests if needed)
+Runtime: The app should be scaffolded to run frontend and backend together with a single command (npm run dev)
+- Enable CORS in the backend
 
 ## Core Features & Requirements
 
@@ -21,7 +24,11 @@ Build a fully functional, single-tenant Sprint Task Manager web application feat
 
 ### 2. Frontend (React / Vite / TypeScript / Tailwind CSS)
 - **Board Layout:** Display four vertical lanes ordered from left to right: **To Do**, **In Progress**, **Review**, and **Done**.
-  - The title and part of the description SHALL be readable from the dashboard 
+  - Ensure the titles of the lanes (To Do, In Progress, Review, Done) are clearly visible and styled.
+  - Ensure the 4 lanes are visible in a FHD resolution (1920x1080).
+  - Use trello alike palette colors for the lanes and tasks
+  - The title, a part of the description of the task cards, and the owner (assignedTo) SHALL be readable from the dashboard 
+    - Do not add buttons or any other element on the task cards besides the title, description, and owner 
 - **Drag-and-Drop:** Implement smooth drag-and-drop functionality to move task cards between any lanes (both forward and backward transitions are allowed). 
   
 - **Task Management UI:**
@@ -37,6 +44,7 @@ Build a fully functional, single-tenant Sprint Task Manager web application feat
 ### 4. Testing Requirements
 - **Frontend:** Include basic unit/integration tests (e.g., using Vitest or Jest with React Testing Library) to verify card rendering and lane filtering.
 - **Backend:** Include API integration tests (e.g., using Jest and Supertest) to verify data validation, successful task creation, and state updates.
+- Add end-to-end tests using Playwright to verify drag-and-drop functionality and lane transitions.
 
 ## TDD is REQUIRED
 - Follow Red-Green-Refactor
