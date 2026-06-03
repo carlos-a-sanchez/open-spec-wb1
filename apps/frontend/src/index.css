@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Sora:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Sora', system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', sans-serif;
+    color: #f7f9ff;
+    background-color: #05060a;
+  }
+
+  body {
+    @apply min-h-screen bg-ink-950 text-slate-100 antialiased;
+    background-image:
+      radial-gradient(circle at 25% 20%, rgba(29, 211, 176, 0.18), transparent 45%),
+      radial-gradient(circle at 80% 0%, rgba(251, 207, 83, 0.18), transparent 50%),
+      linear-gradient(135deg, #05060a 0%, #0d101c 100%);
+    margin: 0;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
