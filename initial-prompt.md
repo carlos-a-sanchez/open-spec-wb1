@@ -7,6 +7,8 @@ Build a fully functional, single-tenant Sprint Task Manager web application feat
 - **Frontend:** React, Vite, TypeScript, Tailwind CSS
 - **Backend:** Node.js, Express, TypeScript
 - **Database:** In-memory storage (variables/collections in memory, reset on server restart)
+Tests: Vitest (and Supertest for API tests if needed)
+Runtime: The app should be scaffolded to run frontend and backend together with a single command (npm run dev)
 
 ## Core Features & Requirements
 

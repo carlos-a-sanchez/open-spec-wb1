@@ -9,10 +9,11 @@ schema: spec-driven
 #     We use conventional commits
 #     Domain: e-commerce platform
 
-  context: |
-    Tech stack: TypeScript, React, Node.js
-    Domain: scrum task manager
-    TDD is REQUIRED: Follow Red-Green-Refactor, For every behavior in the specs, write test FIRST (failing), then implement.
+context: |
+  Tech stack: TypeScript, React, Node.js
+  Runtime: The app should be scaffolded to run frontend and backend together with a single command (npm run dev)
+  Domain: scrum task manager
+  TDD is REQUIRED: Follow Red-Green-Refactor, For every behavior in the specs, write test FIRST (failing), then implement.
 
 
 
